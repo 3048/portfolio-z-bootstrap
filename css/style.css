@@ -1,5 +1,3 @@
-/*general style START*/
-
 * {
 	box-sizing: border-box;
 }
@@ -40,11 +38,9 @@ section {
 /* menu START*/
 
 #menu {
-	text-align: right;
-	position: fixed;
-	background-color: white;
-	width: 100%;
-	z-index: 10;
+	background-color: transparent;
+	border: none;
+	background-image: none;
 }
 
 #menu ul {
@@ -52,23 +48,29 @@ section {
 }
 
 #menu ul .menu-item {
-	display: inline-block;
-	padding: 25px;
+	padding: 15px;
 }
 
 #menu ul .menu-item a {
-	color: #1ac056;
+	color: #fff;
 	text-decoration: none;
 	transition: all .3s;
 }
 
 #menu ul .menu-item a:hover {
-	color: #291f1a;
+	color: #1ac056;
 }
 
-#menu label,
-#menu #drop {
-	display: none;
+#menu.scroll {
+	background-color: #fff;
+}
+
+#menu.scroll ul .menu-item a {
+	color: #1ac056;
+}
+
+#menu.scroll ul .menu-item a:hover {
+	color: #291f1a;
 }
 
 
@@ -167,10 +169,12 @@ p {
 	text-align: center;
 }
 
+#portfolio .portfolio-items [class*="col-"] {
+	padding: 0;
+}
+
 #portfolio .portfolio-item {
 	height: 350px;
-	width: 33%;
-	display: inline-block;
 	font-size: initial;
 	background-size: cover;
 	background-position: center;

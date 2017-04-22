@@ -8,23 +8,19 @@
 }
 
 @media (max-width: 768px) {
-	#menu label {
-		display: block;
+	#menu {
+		background-color: #fff;
+		
+	}
+	
+	#menu ul .menu-item a {
 		color: #1ac056;
-		padding: 15px;
-		text-align: right;
 	}
-	#menu ul {
-		margin: 0;
-		display: none;
+	
+	#menu ul .menu-item a:hover {
+		color: #291f1a;
 	}
-	#menu ul .menu-item {
-		display: block;
-		padding: 15px;
-	}
-	#drop:checked + ul {
-		display: block;
-	}
+	
 	.col-1-2 {
 		width: 100%;
 	}
